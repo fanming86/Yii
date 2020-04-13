@@ -1,0 +1,25 @@
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>loading</title>
+    
+
+<script type="text/javascript">
+      var leaftime="5000"
+     function go(){
+       document.getElementById("num").innerHTML=leaftime/1000;
+         leaftime -= 1000;
+         if(leaftime==0){
+         document.location.href="/user/login";
+       }
+     }
+     setInterval(go,1000);
+</script>
+  </head>
+  
+  <body>
+  <div> Created successfully!  <br>
+      Jump to the login page after  <div id="num" style="font-size:40px"></div> seconds  </div>
+  </body>
+
